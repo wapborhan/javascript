@@ -8,6 +8,26 @@ body{
     width: 100%;
     margin: 0 auto;
 }
+
+button{
+    background: rgb(223, 5, 158);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 900;
+    transition: all 0.3s;
+    cursor: pointer;
+
+}
+button:hover{
+    background: coral;
+    transition: all 0.3s;
+}
+button:checked{
+    background: rgb(185, 49, 0);
+    transition: all 0.3s;
+}
 .sec{
     width: 100%;
     margin: 0 auto;

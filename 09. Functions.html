@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funtion</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="sec">
+        <h2>Funtion_Declare</h2>
+        <div class="bod">
+
+            <button style="padding: 10px; margin-right: 20px;" onclick="say2()">Click</button>
+            <script>
+                //Funtion Declare
+                function say() {
+                    document.write('Hello ');
+                    document.write('Borhan ');
+                    document.write('Uddin');
+                }
+
+                function say2() {
+                    alert("\nHello Borhan Uddin.\n\n Your Funtion Is Working")
+                }
+
+                //Funtion Execute
+                say();
+
+                
+            </script>
+        </div>
+    </div>
+
+    <div class="sec">
+        <h2>Funtion_Parameter</h2>
+        <div class="bod">
+
+            <script>
+                //Funtion Declare
+                function say3(param, param1 , param2  = "Biswas" ) {
+                    document.write(`Hello ${param} ${param1} ${param2}`)
+                }
+
+                //Funtion Execute
+                var fname = 'MD'; 
+                var lname = "Borhan";
+                
+                say3(fname, lname);
+
+                    document.write('<br>');
+                    
+
+                //
+                function addNum(a = 0, b = 0) {
+                    document.write(`${a} + ${b} =`);
+                    return a+b;
+                document.write('If return dont excute');
+                    
+                    
+                }
+
+                document.write(addNum(4,10));
+
+                    document.write('<br>');
+                    
+                
+                var res = addNum(5,25);
+
+                document.write(res);
+                
+            </script>
+        </div>
+    </div>
+
+
+    <div class="sec">
+        <h2>Funtion_Expression and Arrow Function</h2>
+        <div class="bod">
+            
+            <script>
+                
+            </script>
+        </div>
+    </div>
+
+
+    <div class="sec">
+        <h2>Funtion</h2>
+        <div class="bod">
+            
+            <script>
+                
+            </script>
+        </div>
+    </div>
+
+<br><br><br><br><br><br><br><br><br><br><br>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
