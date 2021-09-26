@@ -18,6 +18,7 @@ button{
     font-weight: 900;
     transition: all 0.3s;
     cursor: pointer;
+    outline: 0;
 
 }
 button:hover{
