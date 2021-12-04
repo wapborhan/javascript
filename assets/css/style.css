@@ -60,4 +60,5 @@ button:checked{
     background: #000;
     width: auto;
     padding: 10px 15px;
+    display: table;
 }
