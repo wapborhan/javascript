@@ -1,24 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+document.write("<h3>Funtion_Object Method</h3>");
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funtion</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
-
-
-
-
-    <div class="sec">
-        <h2>Funtion_Object Method</h2>
-        <div class="bod">
-
-            <script>
                 //Object Method
                 let person = {
                     firstName: "Borhan",
@@ -33,12 +14,6 @@
 
                 document.write(person.firstName + "<br>");
                 document.write(person.fullName());
-
-
-
-            </script>
-        </div>
-    </div>
 
 
 
@@ -164,21 +139,3 @@
             </script>
         </div>
     </div>
-
-
-    <div class="sec">
-        <h2>Funtion</h2>
-        <div class="bod">
-
-            <script>
-
-            </script>
-        </div>
-    </div>
-
-
-    <br><br><br><br><br><br><br><br><br><br><br>
-    <script src="assets/js/script.js"></script>
-</body>
-
-</html>

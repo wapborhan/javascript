@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+body{
+    width: 100%;
+    margin: 0 auto;
+}
+
+button{
+    background: rgb(223, 5, 158);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 900;
+    transition: all 0.3s;
+    cursor: pointer;
+    outline: 0;
+
+}
+button:hover{
+    background: coral;
+    transition: all 0.3s;
+}
+button:checked{
+    background: rgb(185, 49, 0);
+    transition: all 0.3s;
+}
+.sec{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.sec .bod{
+    
+    background: #888;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 0 10px 100px;
+}
+
+.sec h2{
+    background: rgb(255, 157, 0);
+    padding: 10px 0 10px 50px;
+    color: red;
+}
+.sec h2::after{
+    content: ">>";
+    position: absolute;
+    top: 10px;
+    left: 17px;
+    color: lime;
+    font-weight: 900;
+}
+
+.sec h3{
+    background: #000;
+    width: auto;
+    padding: 10px 15px;
+    display: table;
+}
