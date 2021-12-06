@@ -74,7 +74,7 @@ class OOperson3 {
   }
 
   grettings() {
-    console.log(`Hello ${this.fristname} ${this.lasttname}`);
+    console.log(`Hello  ${this.fristname} ${this.lasttname}`);
   }
 
   static test() {
