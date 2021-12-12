@@ -67,15 +67,107 @@
 
 // 02. document.querySelector()
 
-let omvalr;
+// let omvalr;
 
-omvalr = document.querySelector("#tittle");
-omvalr = document.querySelector(".tittle_class");
+// omvalr = document.querySelector("#tittle");
+// omvalr = document.querySelector(".tittle_class");
 
-omvalr = document.querySelector("ol");
-omvalr = document.querySelector("ol li");
-omvalr = document.querySelector("ul li:last-child").style.background = "red";
-omvalr = document.querySelector("ul li:nth-child(2)").style.background =
-  "green";
+// omvalr = document.querySelector("ol");
+// omvalr = document.querySelector("ol li");
+// omvalr = document.querySelector("ul li:last-child").style.background = "red";
+// omvalr = document.querySelector("ul li:nth-child(2)").style.background =
+//   "green";
 
-console.log(omvalr);
+// console.log(omvalr);
+
+//MultiSelector
+// document.getElementsByClassName()
+
+// let omlist = document.getElementsByClassName("mselect");
+
+// omlist[0].style.background = "red";
+// omlist[0].style.color = "#888";
+// omlist[0].textContent = "Hello World";
+
+// console.log(omlist[0]);
+
+// document.getElementsByTagName()
+// omlists = document.getElementsByTagName("li");
+
+// omlists = document.querySelector("ul").getElementsByTagName("li");
+
+// let lisArr = Array.from(omlists);
+// lisArr.forEach(function (item) {
+//   console.log(item);
+// });
+
+// console.log(omlists);
+
+// document.querySelectorAll()
+// omsel = document.querySelectorAll(".mselect");
+// omsel = document.querySelectorAll("li");
+
+// omsel.forEach(function (item) {
+//   console.log(item);
+// });
+
+// let liOdd = document.querySelectorAll("li:nth-child(odd)");
+// let liEvn = document.querySelectorAll("li:nth-child(even)");
+
+// liOdd.forEach(function (item) {
+//   item.style.background = "red";
+//   item.style.color = "#fff";
+//   item.style.padding = "10px";
+//   item.style.margin = "0";
+// });
+// liEvn.forEach(function (item) {
+//   item.style.background = "green";
+//   item.style.color = "#fff";
+//   item.style.padding = "10px";
+//   item.style.margin = "0";
+// });
+
+// console.log(omsel);
+
+// // Traversing The Dom
+// let domval;
+// let omlist = document.querySelector("ol");
+// let omlistItem = document.querySelector("ol li");
+
+// domval = omlist;
+// domval = omlistItem;
+
+// //Get Child Nodes
+// domval = omlist;
+// domval = omlist.childNodes;
+// domval = omlist.childNodes[0];
+// domval = omlist.childNodes[1];
+// domval = omlist.childNodes[1].nodeName;
+// domval = omlist.childNodes[1].nodeType;
+// domval = omlist.childNodes[0].nodeType;
+// // 1 Element
+// // 2 Attribute
+// // 3 Text Node
+// // 8 Comment
+// // 9 Document Itself
+// // 10 Doctype
+
+// domval = omlist.children;
+// domval = omlist.children[2];
+// domval = omlist.children[2].children[0];
+// domval = omlist.children[2].children[0].href;
+
+// domval = omlist.firstElementChild;
+// domval = omlist.lastElementChild;
+// domval = omlist.childElementCount;
+
+// domval = omlistItem.parentElement;
+// domval = omlistItem.parentNode;
+// domval = omlistItem.parentNode.parentElement;
+
+// domval = omlistItem.nextSibling.nextSibling;
+// domval = omlistItem.nextElementSibling.nextElementSibling;
+// domval = omlistItem.previousSibling.previousSibling;
+// domval = omlistItem.previousElementSibling;
+
+// console.log(domval);
