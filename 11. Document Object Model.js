@@ -1,4 +1,4 @@
-// // Explore Dom
+// // 02 Explore Dom
 
 // let omval;
 // omval = this;
@@ -33,7 +33,7 @@
 // omval = document.scripts[0].src;
 // omval = document.scripts[0].getAttribute("src");
 
-// //DOM array
+// //  DOM array
 // let links = document.links;
 // let linkArr = Array.from(links);
 
@@ -42,7 +42,7 @@
 // });
 // console.log(links);
 
-// DOM Selector (single);
+// // 03 DOM Selector (single);
 
 // 01. document.getElementById();
 
@@ -80,7 +80,7 @@
 
 // console.log(omvalr);
 
-//MultiSelector
+// //04 DOM MultiSelector
 // document.getElementsByClassName()
 
 // let omlist = document.getElementsByClassName("mselect");
@@ -129,7 +129,7 @@
 
 // console.log(omsel);
 
-// // Traversing The Dom
+// // 05 Traversing The Dom
 // let domval;
 // let omlist = document.querySelector("ol");
 // let omlistItem = document.querySelector("ol li");
@@ -171,3 +171,76 @@
 // domval = omlistItem.previousElementSibling;
 
 // console.log(domval);
+
+// // 06 Add, Replace and Remove Elements
+
+// // Adding Elemement To Dom
+// //Create Element
+
+// let DMolItem = document.createElement("li");
+
+// //Add Class and ID
+// DMolItem.className = "new class name";
+// DMolItem.id = "new id";
+
+// // Add attribute
+// DMolItem.setAttribute("Tittle", "New Tittle Add");
+
+// // Add Element Text
+// DMolItem.appendChild(document.createTextNode("Hello 3"));
+// document.querySelector("ul").appendChild(DMolItem);
+
+// //Link Add
+// let DoMolItem = document.createElement("li");
+// let DoMLink = document.createElement("a");
+
+// // Add attribute
+// DoMLink.appendChild(document.createTextNode("Hello 5"));
+// DoMLink.setAttribute("href", "http://www.wapborhan.com");
+
+// // Creating Element Add To Main List
+// DoMolItem.appendChild(DoMLink);
+// document.querySelector("ol").appendChild(DoMolItem);
+
+// // Replace Element
+// let newHeading = document.createElement("h1");
+// newHeading.appendChild(document.createTextNode("Some Links"));
+
+// // add class
+// newHeading.id = "tittle";
+// newHeading.className = "tittle_class mselect";
+// newHeading.style.background = "black";
+// newHeading.style.display = "inline-block";
+// newHeading.style.padding = "10px 20px";
+// newHeading.style.margin = "10px 0";
+
+// let oldHeading = document.querySelector("h3");
+// let dmparent = document.querySelector(".bod");
+
+// //replace Element to main elements
+// dmparent.replaceChild(newHeading, oldHeading);
+
+// //Remove Elements
+// let dmlostItem = document.querySelectorAll("li");
+// let dmlist = document.querySelector("ol");
+
+// //remove
+// // dmlostItem[0].remove();
+// // dmlostItem[3].remove();
+
+// //add class
+// dmlist.classList.add("test");
+// dmlist.classList.add("new-test");
+
+// //remove class
+// dmlist.classList.remove("mselect");
+
+// //check attribute
+// let ckattrb = dmlist.hasAttribute("class");
+// dmlist.setAttribute("Tittle", "new tittle");
+// dmlist.removeAttribute("Tittle");
+
+// console.log(dmlist);
+// console.log(ckattrb);
+
+// //07. JavaScript DOM Events
