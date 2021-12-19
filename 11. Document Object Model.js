@@ -249,3 +249,6 @@
 function domalert() {
   alert("Hello World Function");
 }
+
+//Event Listener
+let btn = document.getElementById("dmbtn");
