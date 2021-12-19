@@ -244,3 +244,8 @@
 // console.log(ckattrb);
 
 // //07. JavaScript DOM Events
+// Onclick Event
+
+function domalert() {
+  alert("Hello World Function");
+}
