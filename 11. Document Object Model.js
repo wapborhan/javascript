@@ -251,4 +251,4 @@ function domalert() {
 }
 
 //Event Listener
-let btn = document.getElementById("dmbtn");
+let btn = document.getElementById("dmbtn").addEventListener("click", domalert);
