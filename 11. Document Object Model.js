@@ -251,7 +251,13 @@ function domalert() {
 }
 
 //Event Listener
-let btn = document.getElementById("dmbtn").addEventListener("click", domevent);
+let btn = document
+  .getElementById("dmbtn")
+  .addEventListener("mouseover", domalert);
+
+let dmbtns = document
+  .querySelector(".bod")
+  .addEventListener("mouseover", domevent);
 
 document.querySelector(".bod").style.background = "red";
 
@@ -271,7 +277,7 @@ function domevent(dme) {
 
   dmval = dme.offsetY;
   dmval = dme.offsetX;
-  dmval = this;
-
-  console.log(dmval);
+  dmbtns = this;
+  this.style.background = `#${dme.offsetX}`;
+  console.log(dmbtns);
 }
