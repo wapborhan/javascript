@@ -251,4 +251,18 @@ function domalert() {
 }
 
 //Event Listener
-let btn = document.getElementById("dmbtn").addEventListener("click", domalert);
+let btn = document.getElementById("dmbtn").addEventListener("click", domevent);
+
+function domevent(dme) {
+  let dmval = dme;
+  //target element
+  dmval = dme.target;
+  //target element id
+  dmval = dme.target.id;
+  //target element click time(after page load)
+  dmval = dme.target.timeStamp;
+  //event type
+  dmval = dme.target.type;
+
+  console.log(dmval);
+}
