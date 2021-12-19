@@ -244,42 +244,42 @@
 // console.log(ckattrb);
 
 // //07. JavaScript DOM Events
-// Onclick Event
+// // Onclick Event
 
-function domalert() {
-  alert("Hello World Function");
-}
+// function domalert() {
+//   alert("Hello World Function");
+// }
 
-//Event Listener
-let btn = document
-  .getElementById("dmbtn")
-  .addEventListener("mouseover", domalert);
+// //Event Listener
+// let btn = document
+//   .getElementById("dmbtn")
+//   .addEventListener("mouseover", domalert);
 
-let dmbtns = document
-  .querySelector(".bod")
-  .addEventListener("mouseover", domevent);
+// let dmbtns = document
+//   .querySelector(".bod")
+//   .addEventListener("mouseover", domevent);
 
-document.querySelector(".bod").style.background = "red";
+// document.querySelector(".bod").style.background = "red";
 
-function domevent(dme) {
-  let dmval = dme;
-  //target element
-  dmval = dme.target;
-  //target element id
-  dmval = dme.target.id;
-  //target element click time(after page load)
-  dmval = dme.target.timeStamp;
-  //event type
-  dmval = dme.target.type;
+// function domevent(dme) {
+//   let dmval = dme;
+//   //target element
+//   dmval = dme.target;
+//   //target element id
+//   dmval = dme.target.id;
+//   //target element click time(after page load)
+//   dmval = dme.target.timeStamp;
+//   //event type
+//   dmval = dme.target.type;
 
-  dmval = dme.clientY;
-  dmval = dme.clientX;
+//   dmval = dme.clientY;
+//   dmval = dme.clientX;
 
-  dmval = dme.offsetY;
-  dmval = dme.offsetX;
-  dmbtns = this;
-  this.style.background = `#${dme.offsetX}`;
-  console.log(dmbtns);
-}
+//   dmval = dme.offsetY;
+//   dmval = dme.offsetX;
+//   dmbtns = this;
+//   this.style.background = `#${dme.offsetX}`;
+//   console.log(dmbtns);
+// }
 
 //Form
