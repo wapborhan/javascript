@@ -253,6 +253,8 @@ function domalert() {
 //Event Listener
 let btn = document.getElementById("dmbtn").addEventListener("click", domevent);
 
+document.querySelector(".bod").style.background = "red";
+
 function domevent(dme) {
   let dmval = dme;
   //target element
@@ -263,6 +265,13 @@ function domevent(dme) {
   dmval = dme.target.timeStamp;
   //event type
   dmval = dme.target.type;
+
+  dmval = dme.clientY;
+  dmval = dme.clientX;
+
+  dmval = dme.offsetY;
+  dmval = dme.offsetX;
+  dmval = this;
 
   console.log(dmval);
 }
