@@ -40,6 +40,7 @@ rel = /hello/i; //case insensitive
 rel = /^hello/i; //^ Must Start With
 rel = /hello$/i; //$ Must End With
 rel = /^hello$/i; //$ Must Start and End With
+rel = /h.llo/i; //. Match Any One Carectar
 
 restr = "Hello";
 
