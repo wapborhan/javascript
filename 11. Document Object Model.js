@@ -282,4 +282,13 @@
 //   console.log(dmbtns);
 // }
 
-//Form
+// //Form
+// document.querySelector("#name").addEventListener("focus", domform);
+// document.querySelector("#name").addEventListener("keyup", domform2);
+
+// function domform(de) {
+//   this.style.background = "pink";
+// }
+// function domform2(des) {
+//   document.getElementById("formms").innerText = this.value;
+// }
