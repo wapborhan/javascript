@@ -40,9 +40,11 @@ rel = /hello/i; //case insensitive
 rel = /^hello/i; //^ Must Start With
 rel = /hello$/i; //$ Must End With
 rel = /^hello$/i; //$ Must Start and End With
-rel = /h.llo/i; //. Match Any One Carectar
+rel = /h.llo/i; //. Match Any One Characters
+rel = /h*llo/i; // * 0 to More Characters or No Characters
+rel = /he?llo/i; //? Optional
 
-restr = "Hello";
+restr = "Hllo";
 
 document.write(rel.exec(restr));
 document.write("<br>");
