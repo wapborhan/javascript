@@ -43,8 +43,10 @@ rel = /^hello$/i; //$ Must Start and End With
 rel = /h.llo/i; //. Match Any One Characters
 rel = /h*llo/i; // * 0 to More Characters or No Characters
 rel = /he?llo/i; //? Optional
+// // 03. Character Set using Brackets
+rel = /h[ea]llo/i; //[] Must be one of them inside brackets
 
-restr = "Hllo";
+restr = "Hello";
 
 document.write(rel.exec(restr));
 document.write("<br>");
