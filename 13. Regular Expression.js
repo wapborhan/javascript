@@ -36,7 +36,12 @@
 rel = /hello/; //case sensitive
 rel = /hello/i; //case insensitive
 
-restr = "Hello World";
+// Meta Characters
+rel = /^hello/i; //^ Must Start With
+rel = /hello$/i; //$ Must End With
+rel = /^hello$/i; //$ Must Start and End With
+
+restr = "Hello";
 
 document.write(rel.exec(restr));
 document.write("<br>");
