@@ -32,3 +32,20 @@
 // document.write("<br>" + reresultr);
 
 // 02. Literal and Meta Characters
+//Literal Characters
+rel = /hello/; //case sensitive
+rel = /hello/i; //case insensitive
+
+restr = "Hello World";
+
+document.write(rel.exec(restr));
+document.write("<br>");
+
+function reTest(rel, restr) {
+  if (rel.test(restr)) {
+    document.write(`'${restr}' - Matches : '${rel.source}'`);
+  } else {
+    document.write(`'${restr}' - Doesn't Matches : '${rel.source}'`);
+  }
+}
+reTest(rel, restr);
