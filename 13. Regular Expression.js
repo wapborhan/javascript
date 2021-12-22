@@ -1,26 +1,34 @@
-// Regular Expression
+// //01. Regular Expression Intruduce
 
-let rel;
+// let rel;
 
-rel = /hello/; //case sensitive
-rel = /hello/i; //case insensitive
+// rel = /hello/; //case sensitive
+// rel = /hello/i; //case insensitive
 
-document.write(rel);
-document.write("<br>");
-document.write(rel.source);
+// document.write(rel);
+// document.write("<br>");
+// document.write(rel.source);
 
-restr = "Hello World";
-restr = "Again Hello World";
-restr = "AgainHello World";
-restr = "Again Hello World Hello";
+// restr = "Hello World";
+// restr = "Again Hello World";
+// restr = "AgainHello World";
+// restr = "Again Hello World Hello";
 
-//exec() Returns result in an array or null
-let reresult = rel.exec(restr);
-//test() - True/False
-let reresultt = rel.test(restr);
-//match() Returns Array or Null
-let reresultm = restr.match(rel);
-//search() Returns index of the first match or -1
-let reresultse = restr.search(rel);
+// //exec() Returns result in an array or null
+// let reresult = rel.exec(restr);
+// //test() - True/False
+// let reresultt = rel.test(restr);
+// //match() Returns Array or Null
+// let reresultm = restr.match(rel);
+// //search() Returns index of the first match or -1
+// let reresultse = restr.search(rel);
+// //replace() - Replace Return new string
+// let reresultr = restr.replace(rel, "Hi");
 
-console.log(reresultse);
+// document.write("<br>" + reresult);
+// document.write("<br>" + reresultt);
+// document.write("<br>" + reresultm);
+// document.write("<br>" + reresultse);
+// document.write("<br>" + reresultr);
+
+// 02. Literal and Meta Characters
