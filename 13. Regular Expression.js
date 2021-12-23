@@ -45,6 +45,12 @@ rel = /h*llo/i; // * 0 to More Characters or No Characters
 rel = /he?llo/i; //? Optional
 // // 03. Character Set using Brackets
 rel = /h[ea]llo/i; //[] Must be one of them inside brackets
+rel = /h[^ea]llo/i; //[^] Anything except inside brackets
+rel = /^[he]llo/i; //^[] Must start with anyone inside brackets
+rel = /[a-z]llo/i; //[a-z] range anyone inside brackets
+rel = /^[A-Z]/; //^[A-Z] Frist Letter Must Be Uppercase
+rel = /[A-Za-z]/; //[A-Za-z] anything in letter
+rel = /[0-9]ello/; //[0-9] Start in digit
 
 restr = "Hello";
 
