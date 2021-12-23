@@ -51,6 +51,8 @@ rel = /[a-z]llo/i; //[a-z] range anyone inside brackets
 rel = /^[A-Z]/; //^[A-Z] Frist Letter Must Be Uppercase
 rel = /[A-Za-z]/; //[A-Za-z] anything in letter
 rel = /[0-9]ello/; //[0-9] Start in digit
+rel = /[0-9][0-9]ello/; //[0-9] Start in Two digit
+rel = /[0-9][0-9][0-9]ello/; //[0-9] Start in Three digit
 
 restr = "Hello";
 
