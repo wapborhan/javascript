@@ -1,5 +1,7 @@
  {
   "persons":[
-    {"name":"Rahim"}
+    {"name":"Borhan", "age": 25,"hometown":"Kushtia", "married":true},
+    {"name":"Ridoy", "age": 25,"hometown":"Gazipur", "married":false},
+    {"name":"Bondhan", "age": 26,"hometown":"Dhaka", "married":true}
   ]
 }
