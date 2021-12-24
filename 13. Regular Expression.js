@@ -85,6 +85,8 @@ rel = /\S/; //Match for Non Spaces
 rel = /Hello\b/; //word boundry
 
 //Assertions
+rel = /x(?=yx)/; // matches x only x is before yz
+rel = /x(?!yx)/; // not matches x only x is before yz
 
 restr = "hellodjsbfjkbss";
 
