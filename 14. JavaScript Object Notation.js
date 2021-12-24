@@ -14,3 +14,22 @@
 // console.log(student_new);
 
 // // 03. JSON Data Types
+//string
+//number
+//object
+//array
+//boolean
+//null
+
+let jsonperson = {
+  name: "Borhan", //string
+  age: 25, //number
+  hometown: "Kushtia",
+  married: false, //boolean
+  dob: 1996 - 07 - 08, //date
+  test_null: null, //null
+  test_undefined: undefined, //undefined
+  greet: function () {
+    console.log(`Hello ${name}`);
+  }, // function
+};
