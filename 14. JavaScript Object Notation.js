@@ -54,5 +54,17 @@ xhttp.open("GET", "data.json", true);
 xhttp.send();
 
 function jsonData(json_obj) {
-  console.log(json_obj);
+  // console.log(json_obj);
+  var js_obj = JSON.parse(json_obj);
+  // console.log(js_obj);
+
+  for (x in js_obj.persons) {
+    // console.log(x);
+    var jspersons = js_obj.persons;
+    // console.log(jspersons[x]);
+
+    for (y in jspersons[x]) {
+      console.log(`${y} : ${jspersons[x][y]}`);
+    }
+  }
 }
