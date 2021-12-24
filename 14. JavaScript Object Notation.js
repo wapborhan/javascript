@@ -26,10 +26,12 @@ let jsonperson = {
   age: 25, //number
   hometown: "Kushtia",
   married: false, //boolean
-  dob: 1996 - 07 - 08, //date
+  dob: "1996-07-08", //date
   test_null: null, //null
   test_undefined: undefined, //undefined
   greet: function () {
     console.log(`Hello ${name}`);
   }, // function
 };
+let jsonpersonc = JSON.stringify(jsonperson);
+console.log(jsonpersonc);
