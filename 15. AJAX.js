@@ -44,18 +44,20 @@
 document.getElementById("get_jokes").addEventListener("click", loadData);
 
 function loadData() {
+  let number = document.getElementById("get_number").value;
   // create XHR Object (Xml Http Request)
   let ajxh = new XMLHttpRequest();
 
   // open function
-  ajxh.open("GET", "http://api.icndb.com/jokes/random", true);
+  ajxh.open("GET", `http://api.icndb.com/jokes/random/${number}`, true);
 
   ajxh.onload = function () {
     if (this.status === 200) {
       let data = JSON.parse(this.responseText);
       let joke = data.value;
-      // console.log(`${joke.id} : ${joke.joke} `);
-      console.log(joke);
+      for (x in joke) {
+        console.log(`${joke[x].id} : ${joke[x].joke}`);
+      }
 
       // document.getElementById("jokes").innerHTML = `<h4>${jokesdata}</h4>`;
     }
