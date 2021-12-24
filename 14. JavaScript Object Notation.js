@@ -36,4 +36,8 @@
 // let jsonpersonc = JSON.stringify(jsonperson);
 // console.log(jsonpersonc);
 
-// 04. Warning!
+// // 04. Warning!
+//frist use this
+// let jsonpersonc = JSON.stringify(jsonperson);
+
+//05. JSON Objects and Array
