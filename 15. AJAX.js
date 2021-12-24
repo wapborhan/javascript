@@ -17,7 +17,9 @@ function loadData() {
 
   ajxh.onload = function () {
     if (this.status === 200) {
-      console.log(this.responseText);
+      document.getElementById(
+        "ajoutput"
+      ).innerHTML = `<h4>${this.responseText}</h4>`;
     }
   };
 
