@@ -1,8 +1,8 @@
 // //Callback Function
-let persons = [
-  { fristName: "Borhan", lastName: "Uddin" },
-  { fristName: "Rabby", lastName: "Biswas" },
-];
+// let persons = [
+//   { fristName: "Borhan", lastName: "Uddin" },
+//   { fristName: "Rabby", lastName: "Biswas" },
+// ];
 
 // function createPerson(person, getperson) {
 //   setTimeout(function () {
@@ -59,4 +59,26 @@ let persons = [
 
 document.getElementById("getfetch_data").addEventListener("click", fetchData);
 
-function fetchData() {}
+function fetchData() {
+  // fetch("http://api.icndb.com/jokes/random/")
+  //   .then(function (res) {
+  //     return res.json();
+  //   })
+  //   .then(function (data) {
+  //     console.log(data);
+  //   })
+  //   .catch(function (err) {
+  //     console.log(err);
+  //   });
+
+  //use arrow function
+
+  fetch("http://api.icndb.com/jokes/random/")
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}
