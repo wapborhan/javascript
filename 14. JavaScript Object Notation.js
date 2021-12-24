@@ -41,3 +41,13 @@
 // let jsonpersonc = JSON.stringify(jsonperson);
 
 //05. JSON Objects and Array
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    // Typical action to be performed when the document is ready:
+    var data = xhttp.responseText;
+    console.log(data);
+  }
+};
+xhttp.open("GET", "data.json", true);
+xhttp.send();
