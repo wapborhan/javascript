@@ -16,8 +16,10 @@ function loadData() {
   // 404: "Not Found"
 
   ajxh.onload = function () {
-    if (this.statu === 200) {
+    if (this.status === 200) {
+      console.log(this.responseText);
     }
   };
-  console.log(ajxh);
+
+  ajxh.send();
 }
