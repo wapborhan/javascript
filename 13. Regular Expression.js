@@ -68,16 +68,31 @@
 
 // restr = "+8801620557840";
 
-// // document.write(rel.exec(restr));
-// // document.write("<br>");
+// document.write(rel.exec(restr));
+// document.write("<br>");
 
-// function reTest(rel, restr) {
-//   if (rel.test(restr)) {
-//     document.write(`'${restr}' - Matches : '${rel.source}'`);
-//   } else {
-//     document.write(`'${restr}' - Doesn't Matches : '${rel.source}'`);
-//   }
-// }
-// reTest(rel, restr);
+// 04. Shorthand Characters and Assertions
+// Shorthand Characters Classes
+rel = /\w/; //word Character - alphabet number or _
+rel = /\w+/; //word Character one or more
+rel = /\W/; //Non word Character
+rel = /\W+/; //Non word Character one or more
+rel = /\d/; //Digit Character
+rel = /\d+/; //Digit Character one or more
+rel = /\D+/; //Non Digit Character one or more
+rel = /\s/; //Match for Spaces
+rel = /\S/; //Match for Non Spaces
+rel = /Hello\b/; //word boundry
 
-// // 04. Shorthand Characters and Assertions
+//Assertions
+
+restr = "hellodjsbfjkbss";
+
+function reTest(rel, restr) {
+  if (rel.test(restr)) {
+    document.write(`'${restr}' - Matches : '${rel.source}'`);
+  } else {
+    document.write(`'${restr}' - Doesn't Matches : '${rel.source}'`);
+  }
+}
+reTest(rel, restr);
