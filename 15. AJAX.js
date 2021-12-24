@@ -40,7 +40,7 @@
 // }
 
 //02. Data From External Server
-
+// API
 document.getElementById("get_jokes").addEventListener("click", loadData);
 
 function loadData() {
@@ -52,9 +52,12 @@ function loadData() {
 
   ajxh.onload = function () {
     if (this.status === 200) {
-      document.getElementById(
-        "jokes"
-      ).innerHTML = `<h4>${this.responseText}</h4>`;
+      let data = JSON.parse(this.responseText);
+      let joke = data.value;
+      // console.log(`${joke.id} : ${joke.joke} `);
+      console.log(joke);
+
+      // document.getElementById("jokes").innerHTML = `<h4>${jokesdata}</h4>`;
     }
   };
 
