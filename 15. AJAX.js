@@ -48,7 +48,7 @@ function loadData() {
   let ajxh = new XMLHttpRequest();
 
   // open function
-  ajxh.open("GET", "data.txt", true);
+  ajxh.open("GET", "http://api.icndb.com/jokes/random", true);
 
   ajxh.onload = function () {
     if (this.status === 200) {
