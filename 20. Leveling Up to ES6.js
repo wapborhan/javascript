@@ -28,3 +28,5 @@ if (age >= 18) {
 console.log(type);
 
 //array.prototype.find()
+
+// https://youtu.be/UeMhY-8k1E4?list=PLHiZ4m8vCp9MFjMRp9EEHWKArbi0wdgXG&t=141
