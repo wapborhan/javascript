@@ -1,15 +1,15 @@
-//ES6 fat arrow Function
+// ES6 fat arrow Function
 
-//Normal Function
-// function number() {
-//   return 10;
-// }
+// Normal Function
+function number() {
+  return 10;
+}
 
-//Arrow Function
-// let number = (a, b) => {
-//   a + b;
-// };
-// console.log(number(10, 15));
+// Arrow Function
+let number = (a, b) => {
+  a + b;
+};
+console.log(number(10, 15));
 
 //Ternary Oparetor
 var age = 18;
@@ -26,3 +26,5 @@ if (age >= 18) {
 }
 
 console.log(type);
+
+//array.prototype.find()
