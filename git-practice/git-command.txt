@@ -1,0 +1,8 @@
+git init
+git status
+git add
+git add . for all
+git commit -m "Message"
+git log
+git log --oneline for oneline
+git checkout .Code. filename.ext
